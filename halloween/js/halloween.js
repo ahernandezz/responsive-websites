@@ -1,5 +1,5 @@
 
-//function for search button to appear adn disappear when icon is click
+//function for search button to appear and disappear when icon is click
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () =>{
@@ -27,3 +27,21 @@ window.onscroll = () =>{
         document.querySelector('.header').classList.remove('active');
     }
 }
+
+
+
+//for slider
+var swiper = new Swiper(".home-slider",{
+    spaceBetween: 20,
+    effect:"fade",
+    loop:true,
+    navigation: {
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev",
+    },
+    centeredSlides: true,
+    autoplay: {
+        delay: 9500,
+        disableOnInteraction:false,
+    },
+});

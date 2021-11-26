@@ -7,6 +7,9 @@
     <title>halloween page</title>
     <link rel="stylesheet" href="../responsive-websites/halloween/css/halloween.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- auto slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- HEADER SECTION STARTS HERE -->
@@ -39,7 +42,59 @@
         </form>
     </header>
     <!-- HEADER SECTION ENDS HERE -->
+
+    <!-- HOME SECTION STARTS HERE -->
+
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box" style="background: url(..//responsive-websites/halloween/images/home-slider-1.jpg);">
+                    <div class="content">
+                        <h3>happy halloween</h3>
+                        <p>special discount</p>
+                        <div class="button">
+                            <a href="#" class="btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" style="background: url(..//responsive-websites/halloween/images/home-slider-2.jpg);">
+                    <div class="content">
+                        <h3>up to 30% off</h3>
+                        <p>on all costumes</p>
+                        <div class="button">
+                            <a href="#" class="btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" style="background: url(..//responsive-websites/halloween/images/home-slider-3.jpg);">
+                    <div class="content">
+                        <h3>limited offer</h3>
+                        <p>don't miss it</p>
+                        <div class="button">
+                            <a href="#" class="btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            
+        </div>
+    </section>
+
+    <!-- HOME SECTION ENDS HERE -->
+
 <!-- 18:30 -->
+
+    <!-- js for auto slider -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    
     <script src="..//responsive-websites/halloween/js/halloween.js"></script>
+
 </body>
 </html>
