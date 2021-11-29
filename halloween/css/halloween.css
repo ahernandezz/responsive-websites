@@ -157,6 +157,12 @@ section {
 .home .home-slider .box .content {
   text-align: center;
 }
+.home .home-slider .box .content h4 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: white;
+  transition-delay: 2s;
+}
 .home .home-slider .box .content h3 {
   font-size: 5rem;
   color: #fff;
@@ -172,12 +178,38 @@ section {
   transition-delay: 0.6s;
 }
 /* adding the slide show but first make the content disappear then reappear using js*/
+/* all the tags here have a opacity of 0 meaning it appear invisible then it translated by the Y axis */
+/* this hide the text and teh text comes from a direction */
 .home .home-slider .box .content > * {
   transform: translateY(2rem);
   opacity: 0;
 }
+/* this makes the test reappear either higher or lower position */
 .home .home-slider .swiper-slide-active .content > * {
   transform: translateY(0rem);
+  opacity: 1;
+}
+/* shift the slider arrows,cahnge the color, and make them insivible until you hover over slider */
+.home .home-slider .swiper-button-next {
+  right: 4rem;
+  color: #fff;
+  opacity: 0;
+}
+/* shift the slider arrows,cahnge the color, and make them insivible until you hover over slider */
+.home .home-slider .swiper-button-prev {
+  left: 4rem;
+  color: #fff;
+  opacity: 0;
+}
+
+/* change the color of the arrows for the slider */
+.home .home-slider .swiper-button-next:hover,
+.home .home-slider .swiper-button-prev:hover {
+  color: var(--main-color);
+}
+/* makes the arrows reappear when hovered */
+.home .home-slider:hover .swiper-button-next,
+.home .home-slider:hover .swiper-button-prev {
   opacity: 1;
 }
 
