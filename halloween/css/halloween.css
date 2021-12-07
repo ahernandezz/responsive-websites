@@ -52,7 +52,7 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.3);
   padding: 3rem 9%;
   display: flex;
   justify-content: space-between;
@@ -229,6 +229,93 @@ section {
   letter-spacing: 0.1rem;
 }
 
+/* START OF THE PRODUCT CSS */
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+.heading span {
+  color: var(--main-color);
+}
+
+.products .products-slider .box {
+  position: relative;
+  /* anything outsid the pic box shall be hidden (icons) */
+  overflow: hidden;
+  /* everything inside box is center(icons,span,div) */
+  text-align: center;
+  /* size of the box width */
+}
+/* measurements of the size of the box/image */
+.products .products-slider .box .image {
+  height: 40rem;
+  width: 100%;
+  overflow: hidden;
+}
+/* style the pictures/ actual sizing of the image used  */
+.products .products-slider .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* when you hover over the pic in product sec, it will zoom in */
+.products .products-slider .box:hover .image img {
+  transform: scale(1.2);
+}
+/* places icons inside the pic box */
+.products .products-slider .box .icons {
+  position: absolute;
+  top: 0;
+  /* moves icons outside the pic box then returns with hover** */
+  right: -6rem;
+  /* when you hover/zoom in on pic icons stay in frame */
+  z-index: 1;
+}
+/* hover over box shift the icons back into place */
+.products .products-slider .box:hover .icons {
+  right: 1rem;
+}
+/* center the icons  */
+.products .products-slider .box .icons a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--black);
+  background: #fff;
+  margin-top: 1rem;
+  display: block;
+}
+
+/* icon hover color change */
+.products .products-slider .box .icons a:hover {
+  color: var(--main-color);
+}
+
+/* styles the content */
+.products .products-slider .box .content {
+  padding-top: 1rem 0;
+}
+.products .products-slider .box .content h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #fff;
+}
+.products .products-slider .box .content .price {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #fff;
+}
+.products .products-slider .box .content .price span {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--main-color);
+  /* text line has a line through it */
+  text-decoration: line-through;
+}
 /*  */
 
 /*  */
@@ -284,5 +371,10 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  /* gets ride of the arrows for the slider for smaller screens */
+  .home .home-slider .swiper-button-next,
+  .home .home-slider .swiper-button-prev {
+    display: none;
   }
 }

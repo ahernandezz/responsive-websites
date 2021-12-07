@@ -28,7 +28,13 @@ window.onscroll = () =>{
     }
 }
 
-
+window.onload = () =>{
+    if(window.scrollY > 0 ){
+        document.querySelector('.header').classList.add('active');
+    }else{
+        document.querySelector('.header').classList.remove('active');
+    }
+}
 
 //for slider
 var swiper = new Swiper(".home-slider",{
@@ -45,3 +51,28 @@ var swiper = new Swiper(".home-slider",{
         disableOnInteraction:false,
     },
 });
+
+//for product slider
+var swiper = new Swiper(".products-slider", {
+    spaceBetween: 20,
+    loop:true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 9500,
+        disableOnInteraction:false,
+    },
+    grabCursor:true,
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+
