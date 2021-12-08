@@ -339,6 +339,127 @@ section {
   padding: 1rem 0;
 }
 
+/* START OF ARRIVALS CSS */
+.arrivals .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+.arrivals .box-container .box {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.arrivals .box-container .box {
+  position: relative;
+  /* anything outsid the pic box shall be hidden (icons) */
+  overflow: hidden;
+  /* everything inside box is center(icons,span,div) */
+  text-align: center;
+  /* size of the box width */
+}
+/* measurements of the size of the box/image */
+.arrivals .box-container .box .image {
+  height: 45rem;
+  width: 100%;
+  overflow: hidden;
+}
+/* style the pictures/ actual sizing of the image used  */
+.arrivals .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* when you hover over the pic in product sec, it will zoom in */
+.arrivals .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+/* places icons inside the pic box */
+.arrivals .box-container .box .icons {
+  position: absolute;
+  top: 0;
+  /* moves icons outside the pic box then returns with hover** */
+  right: -6rem;
+  /* when you hover/zoom in on pic icons stay in frame */
+  z-index: 1;
+}
+/* hover over box shift the icons back into place */
+.arrivals .box-container .box:hover .icons {
+  right: 1rem;
+}
+/* center the icons  */
+.arrivals .box-container .box .icons a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--black);
+  background: #fff;
+  margin-top: 1rem;
+  display: block;
+}
+
+/* icon hover color change */
+.arrivals .box-container .box .icons a:hover {
+  color: var(--main-color);
+}
+
+/* styles the content */
+.arrivals .box-container .box .content {
+  padding-top: 1rem 0;
+}
+.arrivals .box-container .box .content h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #fff;
+}
+.arrivals .box-container .box .content .price {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #fff;
+}
+.arrivals .box-container .box .content .price span {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--main-color);
+  /* text line has a line through it */
+  text-decoration: line-through;
+}
+
+/* CONTACT CSS START */
+.contact .row {
+  /* all contact on one line wraps around each other */
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .row .map {
+  flex: 1 1 42rem;
+  width: 100%;
+}
+.contact .row form {
+  flex: 1 1 42rem;
+  padding: 2rem;
+  text-align: center;
+  background: #222;
+}
+.contact .row form h3 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  color: var(--main-color);
+}
+.contact .row form .box {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  background: var(--black);
+  color: #fff;
+  text-transform: none;
+  margin: 0.7rem 0;
+}
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+}
 /*  */
 
 /*  */
