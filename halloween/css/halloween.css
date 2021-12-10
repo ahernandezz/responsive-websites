@@ -512,6 +512,51 @@ section {
 .blogs .box-container .box .content .icons a i {
   padding-right: 0.5rem;
 }
+
+/* FOOTER CSS START HERE */
+
+.footer {
+  background: #000;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .box-container .box a {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  display: block;
+}
+.footer .box-container .box a:hover {
+  color: var(--main-color);
+}
+.footer .box-container .box i {
+  padding-right: 0.5rem;
+  color: var(--main-color);
+}
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+  color: #fff;
+}
+.footer .credit {
+  padding: 1rem;
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+  border-top: 0.1rem solid #fff3;
+  font-size: 2rem;
+  color: #aaa;
+  text-align: center;
+}
+.footer .credit span {
+  color: var(--main-color);
+}
 /*  */
 
 /*  */
