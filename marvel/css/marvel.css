@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500&display=swap");
+:root {
+  --main-color: #ef7819;
+  --black: #141215;
+}
+:root {
+  --red: #ff1a1a;
+}
+
+* {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all 0.3s cubic-bezier(0.16, 0.8, 0.62, 1.52);
+  text-transform: capitalize;
+}
+*::selection {
+  background: var(--red);
+  color: #fff;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--red);
+}
+header {
+  position: fixed;
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 93%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+}
+header .logo {
+  color: #333;
+  font-size: 2.5rem;
+}
+header .logo span {
+  color: var(--red);
+}
+header .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+header .navbar ul li {
+  margin-left: 3rem;
+}
+header .navbar ul li a {
+  font-size: 2rem;
+  color: #333;
+}
+header .navbar ul li a:hover,
+header .navbar ul li a.active {
+  color: var(--red);
+}
