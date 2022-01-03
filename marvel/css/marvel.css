@@ -298,6 +298,47 @@ section {
 }
 
 /* END OF MOVIES CSS */
+
+/* START OF PRODUCT CSS */
+.product {
+  background: #eee;
+}
+.product .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product .box-container .box {
+  margin: 1rem;
+  padding: 2rem;
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 27rem;
+}
+.product .box-container .box:hover {
+  box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.1);
+}
+.product .box-container .box img {
+  margin: 2rem 0;
+  height: 17rem;
+}
+.product .box-container .box h3 {
+  color: #444;
+  font-size: 3rem;
+}
+.product .box-container .box p {
+  color: #999;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.product .box-container .box .price {
+  color: #666;
+  font-size: 3rem;
+}
+
+/* END OF PRODUCT CSS */
 /*  */
 /*  */
 /*  */
@@ -359,6 +400,9 @@ section {
   }
   .about .row .image img {
     height: auto;
+    width: 100%;
+  }
+  .product .box-container .box {
     width: 100%;
   }
 }
