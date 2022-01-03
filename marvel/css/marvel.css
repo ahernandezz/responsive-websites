@@ -241,6 +241,63 @@ section {
   padding: 1rem 0;
 }
 /* END OF ABOUT CSS */
+
+/* START OF MOVIES CSS */
+.movies {
+  background: #222;
+}
+.movies .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movies .box-container .box {
+  flex: 1 1 30rem;
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+  margin: 2rem;
+  box-shadow: 0 0.3rem 0.5rem #000;
+}
+.movies .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.movies .box-container .box .info {
+  padding: 2rem;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.movies .box-container .box:hover .info {
+  bottom: 0%;
+}
+
+.movies .box-container .box .info h3 {
+  font-size: 3rem;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+.movies .box-container .box .info span {
+  font-size: 2rem;
+  color: var(--red);
+}
+.movies .box-container .box .info .stars i {
+  font-size: 2rem;
+  color: orange;
+  padding: 1rem 0.1rem;
+}
+.movies .box-container .box .info p {
+  font-size: 2rem;
+  color: #ccc;
+  padding: 0.5rem 0;
+}
+
+/* END OF MOVIES CSS */
 /*  */
 /*  */
 /*  */
